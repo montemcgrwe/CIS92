@@ -1,4 +1,4 @@
-# correct yaml file
+# adding milestone-3.1 tag
 
 name: Create and publish a Docker image
 
@@ -6,7 +6,8 @@ on:
   release:
     types: [published]
   push:
-    branches: ['main']
+#    branches: ['main']
+    branches: ['milestone-3.1']
   workflow_dispatch: {}
 
 env:

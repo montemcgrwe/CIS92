@@ -6,7 +6,7 @@ on:
   release:
     types: [published]
   push:
-    branches: ['milestone-3.1']
+    branches: ['main']
   workflow_dispatch: {}
 
 env:

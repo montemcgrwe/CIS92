@@ -4,7 +4,6 @@ RUN pip install django
 COPY mysite /mysite 
 WORKDIR /mysite
 #--------------------
-#RUN main.go -port=$PORT
 #RUN -e PORT=8080
 #EXPOSE 8080o
 EXPOSE $PORT

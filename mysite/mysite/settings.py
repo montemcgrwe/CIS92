@@ -22,7 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure--!=g2nd=gn10hbb26@^_3oow(9j1e0*^_a*m%+39%7(9del$%e'
-SECRET_KEY=$SECRET_KEY
+SECRET_KEY = os.environ['SECRET_KEY']
+#SECRET_KEY=$SECRET_KEY
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,7 +83,7 @@ DATABASES = {
         'NAME': 'mysite',
         'USER': 'postgres',
         'PASSWORD': 'django',
-        'HOST': 'localhost',
+        'HOST': 'postgres',
     }
 }
 

@@ -6,8 +6,7 @@ on:
   release:
     types: [published]
   push:
-#    branches: ['main']
-    branches: ['ThreeForward']
+    branches: ['main','ThreeForward']
   workflow_dispatch: {}
 
 env:
